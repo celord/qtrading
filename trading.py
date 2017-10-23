@@ -18,3 +18,10 @@ while True:
 
 
 
+if __name__ == "__main__":
+    while True:
+        for msg_type, msg in response.parts():
+            if msg_type == 'pricing.PricingHeartbeat':
+                pass
+            if msg_type == 'pricing.Price':
+                pricetoString(msg)
